@@ -1,0 +1,15 @@
+/*Who issues SQL queries?
+Google Classroom
+Just with this simple data set of exercise logs, we've managed to come up with many different and useful queries. Now I want to take a break from querying to talk about who would usually be doing all this querying, and for what purpose.
+Let's imagine that we have an exercise app with thousands of users, storing data similar to the exercise logs table we've been using.  That app lets users enter daily logs and view their progress on a personal dashboard:
+A mock-up of an exercise website with graphs for exercise stats and a form for entering a new log.
+A mock-up of an exercise website with graphs for exercise stats and a form for entering a new log.
+For an app like that, there are a few folks on the team that might be issuing SQL queries:
+Software engineers:
+They are the ones building the backend (the server-side logic) and the frontend (the HTML/CSS/JS that renders data and forms). The software engineers would use SQL to communicate on the server-side with the database that's storing all of the user's data. They would need to know how to do any queries needed by the frontend. For example, if users saw a dashboard when they logged on of how much exercise they did that day, the engineer would need to figure out how to do a SELECT filtered by date and user. They would need to figure out how to insert data and update it (which we'll discuss much later)
+Data scientists:
+They are the ones analyzing the data, trying to learn more about users, maybe coming up with suggestions about how to help them exercise more. They need a deep understanding of SELECT statements, because they need to do very complex queries to do the analysis they're interested in. For example, they might use a SELECT to analyze what percentage of users were more likely to do more exercise if they started off exercising in the morning, maybe using CASE and GROUP BY.
+Product management:
+They are the decision makers at a company, the people that look at the data, talk to users, look at the market, and try to understand how to improve a product to get more users, make users happier, or make more money. They often need an understanding of SQL queries so they can look at usage statistics and try to understand what parts of a product are being used the most, which parts are being used in surprising ways, and what isn't being used at all. They might use a SELECT to look at how many users even use the "heart_rate" field at all, if they're debating getting rid of it.
+Since all these people are working at the same company, they can and should be sharing knowledge with each other about how to use SQL on their databases. Not everyone needs to be a SQL expert, but in my experience, many people at a company can benefit from having a basic understanding of SQL, and some of them may want to go into more advanced features as they get more sophisticated.
+On that note, keep going to learn more advanced features...!*/
